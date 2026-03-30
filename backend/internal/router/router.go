@@ -10,19 +10,19 @@ func SetupRoutes(router *gin.Engine) {
 	api := router.Group("/api")
 	{
 		// Test route
-		api.GET("/tweets", getTweets)
-		api.POST("/tweets", createTweet)
+		api.GET("/posts", getPosts)
+		api.POST("/posts", createPost)
 	}
 }
 
-func getTweets(c *gin.Context) {
+func getPosts(c *gin.Context) {
 	c.JSON(200, gin.H{
-		"message": "TODO: Implement getTweets",
+		"message": "TODO: Implement getPosts",
 	})
 }
 
-func createTweet(c *gin.Context) {
+func createPost(c *gin.Context) {
 	c.JSON(200, gin.H{
-		"message": "TODO: Implement createTweet",
+		"message": "TODO: Implement createPost",
 	})
 }
